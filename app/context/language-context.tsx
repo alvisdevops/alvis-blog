@@ -216,7 +216,7 @@ const translations = {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [language, setLanguage] = useState<Language>("es");
+  const [language, setLanguage] = useState<Language>("en");
 
   const t = (key: string) => {
     // @ts-expect-error key access
