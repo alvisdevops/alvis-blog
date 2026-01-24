@@ -11,7 +11,7 @@ services:
         - NEXT_PUBLIC_GISCUS_CATEGORY_ID=${NEXT_PUBLIC_GISCUS_CATEGORY_ID:-}
     container_name: alvis-blog
     ports:
-      - "3000:3000"
+      - "3001:3000"
     environment:
       - NODE_ENV=production
       - SITE_URL=${SITE_URL:-https://alvis.blog}
